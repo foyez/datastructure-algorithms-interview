@@ -6,20 +6,20 @@
 // access - O(n)
 
 class Node {
-	constructor (val) {
+	constructor(val) {
 		this.val = val;
 		this.next = null;
 	}
 }
 
 class SinglyLinkedList {
-	constructor () {
+	constructor() {
 		this.head = null;
 		this.tail = null;
 		this.length = 0;
 	}
 
-	push (val) {
+	push(val) {
 		const newNode = new Node(val);
 
 		if (!this.head) {
@@ -43,7 +43,7 @@ class SinglyLinkedList {
 	// 	}
 	// }
 
-	pop () {
+	pop() {
 		if (!this.head) return undefined;
 		let current = this.head;
 		let newTail = current;
@@ -63,7 +63,7 @@ class SinglyLinkedList {
 		return current;
 	}
 
-	shift () {
+	shift() {
 		if (!this.head) return undefined;
 		let current = this.head;
 		this.head = current.next;
@@ -74,7 +74,7 @@ class SinglyLinkedList {
 		return current;
 	}
 
-	unshift (val) {
+	unshift(val) {
 		const newNode = new Node(val);
 
 		if (!this.head) {
@@ -94,7 +94,7 @@ class SinglyLinkedList {
 		return this;
 	}
 
-	get (index) {
+	get(index) {
 		if (index < 0 || index >= this.length) return null;
 		let counter = 0;
 		let current = this.head;
@@ -107,7 +107,7 @@ class SinglyLinkedList {
 	}
 
 	// replace
-	set (index, val) {
+	set(index, val) {
 		const foundNode = this.get(index);
 		if (foundNode) {
 			foundNode.val = val;
@@ -116,7 +116,7 @@ class SinglyLinkedList {
 		return false;
 	}
 
-	insert (index, val) {
+	insert(index, val) {
 		if (index < 0 || index > this.length) return false;
 		if (index === this.length) return !!this.push(val);
 		if (index === 0) return !!this.unshift(val);
@@ -130,7 +130,7 @@ class SinglyLinkedList {
 		return true;
 	}
 
-	remove (index) {
+	remove(index) {
 		if (index < 0 || index >= this.length) return undefined;
 		if (index === this.length - 1) return this.pop();
 		if (index === 0) return this.shift();
@@ -141,7 +141,7 @@ class SinglyLinkedList {
 		return removedItem;
 	}
 
-	reverse () {
+	reverse() {
 		this.print();
 		let node = this.head;
 		this.head = this.tail;
@@ -160,7 +160,7 @@ class SinglyLinkedList {
 		return this;
 	}
 
-	print () {
+	print() {
 		const arr = [];
 		let current = this.head;
 
