@@ -20,6 +20,20 @@
 
 **Example1:** Write a function called same, which accepts two arrays. The function should return true if every value in the array has it's corresponding value squared in the second array. The frequency of values must be the same. (Same frequency)
 
+```txt
+input:
+arr1 = [1, 2, 3]
+arr2 = [4, 1, 9]
+
+output: true
+```
+
+```py
+def sameSquared(arr1, arr2):
+    if len(arr1) != len(arr2):
+        return False
+```
+
 **Example2:** Given two strings, write a function to determine if the second string is an anagram of the first. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman. (ANAGRAMS)
 
 ### II. Multiple Pointers
