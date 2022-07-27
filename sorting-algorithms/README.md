@@ -12,7 +12,7 @@ Sorting is the process of rearranging the items in a collection (e.g. an array) 
 * Sorting movies based on release year
 * Sorting movies based on revenue
 
-**15 Sorting Algorithms in 6 Minutes:** panthema.net/2013/sound-of-sorting
+**15 Sorting Algorithms in 6 Minutes:** <https://panthema.net/2013/sound-of-sorting>
 
 ## Why do we need to learn sorting?
 * Sorting is an incredibly common task, so it's good to know how it works
